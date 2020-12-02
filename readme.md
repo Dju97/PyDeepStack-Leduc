@@ -87,3 +87,14 @@ The documentation for code files was automatically generated with [LDoc](https:/
 which can be installed with `luarocks install ldoc`. To re-generate the docs,
 run `ldoc .` in the `doc/` directory. If you wish to also generate
 documentation for local functions, run `ldoc . -all` instead.
+
+## Building and running docker
+The following command are useful if you want to run DeepStack in a container:
+````
+docker build --tag deepstack:1.0 .
+docker run -t -d image_id
+````
+And you can then run commands in the container with 
+````
+docker exec -it container_id bash
+````
